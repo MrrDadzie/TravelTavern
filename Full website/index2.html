@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>About ~ Travel Tavern</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo1.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>           
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index2.html">About Us</a></li>
+                <li><a href="index3.html">Service</a></li>
+                <li><a href="index.html#testimonial">Testimonial</a></li>
+                <li><a href="index4.html">Contact</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i> 
+    </nav>
+    <h1>About Us</h1> 
+</section>
+
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We are the world's largest travel agency</h1>
+            <p>With a combined experience of 16 years, Traveltavern offers the best available airfares, accommodation and migration consultancy rates. 
+            <br> Our clients enjoy the service and knowledge of a boutique business with the pricing benefits & security of a global organisation.
+            <br>
+            <br> The award winning business is owned and operated by its management with experience in the travel industry respectively. 
+            <br> We have a team of experienced consultants, passionate about travel and committed to delivering outstanding service to their clients. 
+            <br> We are goal orientated and focused on achieving increased savings and efficiency for our business travelers. 
+            <br> Our global alliances and partners provide us with strong buying power and our innovative solutions. 
+            <br> Travel Tavern can become a valuable extension of your business.</p>
+            <a href="" class="explore-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="images/retreat.jpg">
+        </div>
+    </div>
+    <div class="row">
+        <div class="about-col">
+            <img src="images/retreat.jpg">
+        </div>
+        <div class="about-col">
+            <h1>We are the world's largest travel agency</h1>
+            <p>With a combined experience of 16 years, Traveltavern offers the best available airfares, accommodation and migration consultancy rates. 
+            <br> Our clients enjoy the service and knowledge of a boutique business with the pricing benefits & security of a global organisation.
+            <br>
+            <br> The award winning business is owned and operated by its management with experience in the travel industry respectively. 
+            <br> We have a team of experienced consultants, passionate about travel and committed to delivering outstanding service to their clients. 
+            <br> We are goal orientated and focused on achieving increased savings and efficiency for our business travelers. 
+            <br> Our global alliances and partners provide us with strong buying power and our innovative solutions. 
+            <br> Travel Tavern can become a valuable extension of your business.</p>
+            <a href="" class="explore-btn">EXPLORE NOW</a>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <div class="row">
+        <div class="footer-col">
+            <img src="images/logo1.png">
+        </div>
+        <div class="footer-col">
+            <p>@2023 ~ Made by Mr. Dadzie</p>
+        </div> 
+        <div class="footer-col">
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-snapchat"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-pinterest"></i>
+            </div>
+        </div>
+    </div>   
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="scripts.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+        Email.send({
+            Host : "smtp.gmail.com",
+            Username : "10276994@upsamail.edu.gh",
+            Password : "Micah86642",
+            To : 'micahfiifidadzie@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "New Contact Form",
+            Body : "Name: " + document.getElementById("name").value
+                + "<br> Email: " + document.getElementById("email").value
+                + "<br> Phone No.: " + document.getElementById("phone").value
+                + "<br> Message: " + document.getElementById("message").value
+        }).then(
+        message => alert("Message Sent Successfully") 
+        );
+    }
+</script>
+</body>
+</html>
